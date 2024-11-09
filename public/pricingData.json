@@ -1,0 +1,321 @@
+{
+  "plans": [
+    {
+      "name": "Free",
+      "price": "Free",
+      "title": "Up to <strong>500</strong> visitors/month",
+      "text": "The total number of unique visitors who can view Chaty on your website each month. The visitors' counter resets once every month",
+      "details": {
+        "1_year": {
+          "price": "Free",
+          "price_postfix": "",
+          "plan_type": "Billed monthly",
+          "plan_info": "",
+          "dd_text": "Billed monthly",
+          "btn_text": "Buy now",
+          "price_id": "#1"
+        },
+        "2_year": {
+          "price": "Free",
+          "price_postfix": "",
+          "plan_type": "Billed annually",
+          "plan_info": "Save $",
+          "dd_text": "Billed annually",
+          "btn_text": "Buy now",
+          "price_id": "#2"
+        }
+      }
+    },
+    {
+      "name": "Basic",
+      "price": "$15",
+      "title": "Up to <strong>10,000</strong> visitors/month",
+      "text": "The total number of unique visitors who can view Chaty on your website each month. The visitors' counter resets once every month",
+      "details": {
+        "1_year": {
+          "price": "$15",
+          "price_postfix": "/Month",
+          "plan_type": "Billed monthly",
+          "plan_info": "",
+          "dd_text": "Billed monthly",
+          "btn_text": "Buy now",
+          "price_id": "#3"
+        },
+        "2_year": {
+          "price": "$12.5",
+          "price_postfix": "/Month",
+          "plan_type": "Billed annually",
+          "plan_info": "Save $",
+          "dd_text": "Billed annually",
+          "btn_text": "Buy now",
+          "price_id": "#4"
+        }
+      }
+    },
+    {
+      "name": "Pro",
+      "price": "$39",
+      "title": "Up to <strong>50,000</strong> visitors/month",
+      "text": "The total number of unique visitors who can view Chaty on your website each month. The visitors' counter resets once every month",
+      "details": {
+        "1_year": {
+          "price": "$39",
+          "price_postfix": "/Month",
+          "plan_type": "Billed monthly",
+          "plan_info": "",
+          "dd_text": "Billed monthly",
+          "btn_text": "Buy now",
+          "price_id": "#5"
+        },
+        "2_year": {
+          "price": "$33",
+          "price_postfix": "/Month",
+          "plan_type": "Billed annually",
+          "plan_info": "Save $",
+          "dd_text": "Billed annually",
+          "btn_text": "Buy now",
+          "price_id": "#6"
+        }
+      }
+    },
+    {
+      "name": "Growth",
+      "price": "$79",
+      "title": "Up to <strong>150,000</strong> visitors/month ",
+      "text": "The total number of unique visitors who can view Chaty on your website each month. The visitors' counter resets once every month",
+      "details": {
+        "1_year": {
+          "price": "$79",
+          "price_postfix": "/Month",
+          "plan_type": "Billed monthly",
+          "plan_info": "",
+          "dd_text": "Billed monthly",
+          "btn_text": "Buy now",
+          "price_id": "#7"
+        },
+        "2_year": {
+          "price": "$66",
+          "price_postfix": "/Month",
+          "plan_type": "Billed annually",
+          "plan_info": "Save $",
+          "dd_text": "Billed annually",
+          "btn_text": "Buy now",
+          "price_id": "#8"
+        }
+      }
+    },
+    {
+      "name": "Growth",
+      "price": "$139",
+      "title": "Up to <strong>300,000</strong> visitors/month ",
+      "text": "The total number of unique visitors who can view Chaty on your website each month. The visitors' counter resets once every month",
+      "details": {
+        "1_year": {
+          "price": "$139",
+          "price_postfix": "/Month",
+          "plan_type": "Billed monthly",
+          "plan_info": "",
+          "dd_text": "Billed monthly",
+          "btn_text": "Buy now",
+          "price_id": "#9"
+        },
+        "2_year": {
+          "price": "$116",
+          "price_postfix": "/Month",
+          "plan_type": "Billed annually",
+          "plan_info": "Save $",
+          "dd_text": "Billed annually",
+          "btn_text": "Buy now",
+          "price_id": "#10"
+        }
+      }
+    },
+    {
+      "name": "Growth",
+      "price": "$199",
+      "title": "Up to <strong>500,000</strong> visitors/month ",
+      "text": "The total number of unique visitors who can view Chaty on your website each month. The visitors' counter resets once every month",
+      "details": {
+        "1_year": {
+          "price": "$199",
+          "price_postfix": "/Month",
+          "plan_type": "Billed monthly",
+          "plan_info": "",
+          "dd_text": "Billed monthly",
+          "btn_text": "Buy now",
+          "price_id": "#11"
+        },
+        "2_year": {
+          "price": "$166",
+          "price_postfix": "/Month",
+          "plan_type": "Billed annually",
+          "plan_info": "Save $",
+          "dd_text": "Billed annually",
+          "btn_text": "Buy now",
+          "price_id": "#12"
+        }
+      }
+    },
+    {
+      "name": "Growth",
+      "price": "$319",
+      "title": "Up to <strong>1,000,000</strong> visitors/month ",
+      "text": "The total number of unique visitors who can view Chaty on your website each month. The visitors' counter resets once every month",
+      "details": {
+        "1_year": {
+          "price": "$319",
+          "price_postfix": "/Month",
+          "plan_type": "Billed monthly",
+          "plan_info": "",
+          "dd_text": "Billed monthly",
+          "btn_text": "Buy now",
+          "price_id": "#13"
+        },
+        "2_year": {
+          "price": "$266",
+          "price_postfix": "/Month",
+          "plan_type": "Billed annually",
+          "plan_info": "Save $",
+          "dd_text": "Billed annually",
+          "btn_text": "Buy now",
+          "price_id": "#14"
+        }
+      }
+    },
+    {
+      "name": "Growth",
+      "price": "$399",
+      "title": "Up to <strong>2,000,000</strong> visitors/month ",
+      "text": "The total number of unique visitors who can view Chaty on your website each month. The visitors' counter resets once every month",
+      "details": {
+        "1_year": {
+          "price": "$399",
+          "price_postfix": "/Month",
+          "plan_type": "Billed monthly",
+          "plan_info": "",
+          "dd_text": "Billed monthly",
+          "btn_text": "Buy now",
+          "price_id": "#15"
+        },
+        "2_year": {
+          "price": "$333",
+          "price_postfix": "/Month",
+          "plan_type": "Billed annually",
+          "plan_info": "Save $",
+          "dd_text": "Billed annually",
+          "btn_text": "Buy now",
+          "price_id": "#16"
+        }
+      }
+    }
+  ],
+  "plansInfo": {
+    "1_year": {
+      "title": "Billed monthly",
+      "sub_title": "",
+      "discount": ""
+    },
+    "2_year": {
+      "title": "Billed yearly",
+      "sub_title": "",
+      "discount": "Save 20% 😍"
+    }
+  },
+  "features": [
+    {
+      "is_pro": "0",
+      "feature_title": "Unlimited widgets",
+      "feature_desc": "Add any number of widgets. E.g., Create separate widgets for desktop and mobile, or show different widgets for different countries or different pages"
+    },
+    {
+      "is_pro": "0",
+      "feature_title": "Unlimited channels",
+      "feature_desc": "Choose any social channel e.g., Facebook/Messenger/WhatsApp/Instagram & more"
+    },
+    {
+      "is_pro": "0",
+      "feature_title": "Contact form",
+      "feature_desc": "Add a contact form to your Chaty widget. Using the contact form you can collect info like the name, email, phone, and a message from your website's visitors"
+    },
+    {
+      "is_pro": "0",
+      "feature_title": "Widget customization",
+      "feature_desc": "Change colors, button placement, custom icon, fonts, & more to match your brand identity"
+    },
+    {
+      "is_pro": "0",
+      "feature_title": "Channels customization",
+      "feature_desc": "Change each channel's color (or use an image for a channel), device visibility (phone/desktop), hover text & more"
+    },
+    {
+      "is_pro": "0",
+      "feature_title": "Triggers",
+      "feature_desc": "Trigger the widget on exit intent, after a certain time period, or when user scrolls to a specific part of the website"
+    },
+    {
+      "is_pro": "0",
+      "feature_title": "Attention effect",
+      "feature_desc": "Grab users' attention with fancy effects"
+    },
+    {
+      "is_pro": "0",
+      "feature_title": "Page targeting",
+      "feature_desc": "Show widget on specific pages on a website, or even exclude on some of the pages. Use RegEx like conditions such as contains, exact match, starts with, and ends with"
+    },
+    {
+      "is_pro": "0",
+      "feature_title": "Custom channels",
+      "feature_desc": "Add custom channels along with default channels. For example, you can add your personal website as a new custom channels"
+    },
+    {
+      "is_pro": "1",
+      "feature_title": "Traffic source targeting",
+      "feature_desc": "Show the widget only to visitors who come from specific traffic sources, including direct traffic, social networks, search engines, Google Ads, or any other traffic source"
+    },
+    {
+      "is_pro": "1",
+      "feature_title": "Dynamic chat pop-up",
+      "feature_desc": "Choose between two types of pop-up designs, set pop-up text and color, and use merge tags like the URL and title. Customize the behavior of the widget based on visitor interaction. <img loading=\"lazy\" src='https://chaty.app/wp-content/uploads/2023/06/chaty-chat-view.1689b9f8.gif' />"
+    },
+    {
+      "is_pro": "1",
+      "feature_title": "Multiple agents",
+      "feature_desc": "Show multiple agents under a single channel. For example, allow visitors to reach for pre-sales info or support with different channels on WhatsApp <img loading=\"lazy\" src='https://chaty.app/wp-content/uploads/2023/06/agents-view.4a517025.webp' />"
+    },
+    {
+      "is_pro": "1",
+      "feature_title": "Get leads to email",
+      "feature_desc": "Get your contact forms leads' details directly to your email"
+    },
+    {
+      "is_pro": "1",
+      "feature_title": "Country targeting",
+      "feature_desc": "Show the widget for specific countries"
+    },
+    {
+      "is_pro": "1",
+      "feature_title": "Date scheduling",
+      "feature_desc": "Display the widget on specific dates as you prefer. I.e., Show a widget specifically when you launch a marketing campaign"
+    },
+    {
+      "is_pro": "1",
+      "feature_title": "Available days and hours",
+      "feature_desc": "Display the widget on specific days & hours. I.e., show the widget on your working hours Monday-Thursday, 09:00 to 17:00"
+    },
+    {
+      "is_pro": "1",
+      "feature_title": "Preset tags for WhatsApp",
+      "feature_desc": "Add your own pre-set message that's automatically added to the user's message when they click WhatsApp. E.g., you can get the Page title & URL when someone sends you a message from that page"
+    },
+    {
+      "is_pro": "1",
+      "feature_title": "Google Analytics",
+      "feature_desc": "Track which channels are getting the most clicks with GA events"
+    },
+    {
+      "is_pro": "1",
+      "feature_title": "Custom CSS",
+      "feature_desc": "Custom CSS"
+    }
+  ]
+}
