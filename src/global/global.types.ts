@@ -21,6 +21,21 @@ export interface Plan {
   details: PlanDetails;
 }
 
+export interface Features {
+  feature_desc: string;
+  feature_title: string;
+  is_pro: string;
+}
+
+export interface PlanInfo {
+  id: string;
+  title: string;
+  sub_title: string;
+  discount: string;
+}
+
 export interface PlansData {
   plans: Plan[];
+  features: Features[];
+  plansInfo: PlanInfo[];
 }

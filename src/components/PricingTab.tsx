@@ -1,12 +1,16 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { PlansData, Plan } from "../global/global.types";
+
+type BillingType = "1_year" | "2_year";
 
 interface PricingPlansProps {
   plans: PlansData;
 }
 
 const PricingPlans: React.FC<PricingPlansProps> = ({ plans }) => {
-  const [billingType, setBillingType] = useState<"1_year" | "2_year">("1_year");
+  console.log(plans);
+
+  const [billingType, setBillingType] = useState<BillingType>("1_year");
 
   const renderPlans = () => {
     const mergedPlans = plans.plans.reduce((acc: Plan[], plan: Plan) => {
@@ -35,14 +39,31 @@ const PricingPlans: React.FC<PricingPlansProps> = ({ plans }) => {
 
       return (
         <div key={i} className="plan">
-          <h3>{plan.name}</h3>
+          <h3 className="plan-name">{plan.name}</h3>
           <p className="price">
             {billingDetails.price}
-            {billingDetails.price_postfix}
+            <span className="month"> {billingDetails.price_postfix}</span>
           </p>
           <p dangerouslySetInnerHTML={{ __html: plan.title }}></p>
-          <p>{billingDetails.plan_type}</p>
-          <button>{billingDetails.btn_text}</button>
+          <p>
+            {plan?.name === "Free"
+              ? "Free includes:"
+              : "Everything in free plus:"}
+          </p>
+          <ul className="list">
+            {plans.features
+              ?.filter((feature) =>
+                plan?.name === "Free"
+                  ? feature.is_pro === "0"
+                  : feature.is_pro === "1"
+              )
+              .map((feature, i) => (
+                <li key={i} className="single-list">
+                  {feature.feature_title}
+                </li>
+              ))}
+          </ul>
+          <button>Select Plan</button>
         </div>
       );
     });
@@ -51,18 +72,21 @@ const PricingPlans: React.FC<PricingPlansProps> = ({ plans }) => {
   return (
     <div className="pricing-plans">
       <div className="tabs">
-        <button
-          className={`tab-btn ${billingType === "1_year" ? "active" : ""}`}
-          onClick={() => setBillingType("1_year")}
-        >
-          Billed Monthly
-        </button>
-        <button
-          className={`tab-btn ${billingType === "2_year" ? "active" : ""}`}
-          onClick={() => setBillingType("2_year")}
-        >
-          Billed Yearly
-        </button>
+        {plans?.plansInfo?.map((planInfo, index) => (
+          <div key={index}>
+            <button
+              className={`tab-btn ${
+                billingType === planInfo.id ? "active" : ""
+              }`}
+              onClick={() => setBillingType(planInfo?.id as BillingType)}
+            >
+              {planInfo.title}
+            </button>
+            {planInfo.discount && (
+              <span className="discount-text"> {planInfo.discount}</span>
+            )}
+          </div>
+        ))}
       </div>
       <div id="plans-container">{renderPlans()}</div>
     </div>

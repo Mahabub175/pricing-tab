@@ -6,6 +6,11 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --violet: #b78deb;
+  --green: #68cb9b;
+  --orange: #ffb72c;
+  --blue: #4cb3fd;
+  --ash: #49687e;
 }
 
 .container {
@@ -26,17 +31,18 @@
 }
 
 .tab-btn {
-  padding: 10px 20px;
   cursor: pointer;
   border: none;
-  background-color: #f0f0f0;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  background-color: transparent;
+  font-weight: 600;
+  color: var(--ash);
+  font-size: medium;
 }
 
 .tab-btn.active {
-  background-color: #007bff;
-  color: white;
+  color: var(--violet);
+  border-bottom: 2px solid var(--violet);
+  font-weight: 800;
 }
 
 #plans-container {
@@ -45,7 +51,7 @@
   gap: 20px;
   padding: 20px;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   margin: 0 auto;
 }
 
@@ -70,8 +76,9 @@
 .plan {
   border: 1px solid #ccc;
   padding: 20px;
-  width: 200px;
-  text-align: center;
+  width: 255px;
+  height: 662px;
+  text-align: start;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -79,4 +86,34 @@
 .price {
   font-size: 1.5em;
   color: #333;
+}
+
+.month {
+  font-size: 1rem;
+  color: #333;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+.single-list {
+  margin-top: 10px;
+}
+
+.plan-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 20px 0px -20px 0px;
+  color: var(--ash);
+}
+
+.discount-text {
+  color: var(--ash);
+  font-weight: 600;
+  background: rgba(183, 141, 235, 0.15);
+  padding: 8px;
+  border-radius: 40px;
+  margin-left: 10px;
+  margin-top: 50px !important;
 }

@@ -2,6 +2,7 @@
   "plans": [
     {
       "name": "Free",
+      "color": "#4cb3fd",
       "price": "Free",
       "title": "Up to <strong>500</strong> visitors/month",
       "text": "The total number of unique visitors who can view Chaty on your website each month. The visitors' counter resets once every month",
@@ -29,6 +30,7 @@
     {
       "name": "Basic",
       "price": "$15",
+      "color": "#ffb72c",
       "title": "Up to <strong>10,000</strong> visitors/month",
       "text": "The total number of unique visitors who can view Chaty on your website each month. The visitors' counter resets once every month",
       "details": {
@@ -55,6 +57,8 @@
     {
       "name": "Pro",
       "price": "$39",
+      "color": "#68cb9b",
+      "popular": true,
       "title": "Up to <strong>50,000</strong> visitors/month",
       "text": "The total number of unique visitors who can view Chaty on your website each month. The visitors' counter resets once every month",
       "details": {
@@ -81,6 +85,7 @@
     {
       "name": "Growth",
       "price": "$79",
+      "color": "#b78deb",
       "title": "Up to <strong>150,000</strong> visitors/month ",
       "text": "The total number of unique visitors who can view Chaty on your website each month. The visitors' counter resets once every month",
       "details": {
@@ -209,18 +214,21 @@
       }
     }
   ],
-  "plansInfo": {
-    "1_year": {
+  "plansInfo": [
+    {
+      "id": "1_year",
       "title": "Billed monthly",
       "sub_title": "",
       "discount": ""
     },
-    "2_year": {
+    {
+      "id": "2_year",
       "title": "Billed yearly",
       "sub_title": "",
       "discount": "Save 20% 😍"
     }
-  },
+  ],
+
   "features": [
     {
       "is_pro": "0",
