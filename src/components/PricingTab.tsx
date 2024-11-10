@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { PlansData, Plan } from "../global/global.types";
+import { hexToHSL } from "../utils/hexToHSL";
 
 type BillingType = "1_year" | "2_year";
 
@@ -8,8 +9,6 @@ interface PricingPlansProps {
 }
 
 const PricingPlans: React.FC<PricingPlansProps> = ({ plans }) => {
-  console.log(plans);
-
   const [billingType, setBillingType] = useState<BillingType>("1_year");
 
   const renderPlans = () => {
@@ -19,6 +18,7 @@ const PricingPlans: React.FC<PricingPlansProps> = ({ plans }) => {
         if (!existingGrowthPlan) {
           acc.push({
             name: "Growth",
+            color: plan.color,
             price: plan.price,
             title: plan.title,
             text: plan.text,
@@ -38,14 +38,66 @@ const PricingPlans: React.FC<PricingPlansProps> = ({ plans }) => {
       const billingDetails = plan.details[billingType];
 
       return (
-        <div key={i} className="plan">
+        <div
+          key={i}
+          className="plan"
+          style={{
+            borderTop: `7px solid ${plan.color}`,
+          }}
+        >
           <h3 className="plan-name">{plan.name}</h3>
-          <p className="price">
+          <p
+            className="price"
+            style={{ color: plan.color, fontSize: "2rem", fontWeight: "bold" }}
+          >
             {billingDetails.price}
             <span className="month"> {billingDetails.price_postfix}</span>
           </p>
-          <p dangerouslySetInnerHTML={{ __html: plan.title }}></p>
-          <p>
+          <div
+            style={{
+              color: plan.color,
+              backgroundColor: `hsl(${hexToHSL(plan.color).hue}, ${
+                hexToHSL(plan.color).saturation
+              }%, ${hexToHSL(plan.color).lightness + 20}%)`,
+              borderRadius: 20,
+              paddingTop: 5,
+              paddingLeft: 10,
+              paddingRight: 10,
+              fontSize: 14,
+              marginTop: 10,
+              display: "flex",
+              justifyContent: "space-between",
+            }}
+          >
+            <div
+              dangerouslySetInnerHTML={{
+                __html: plan.title,
+              }}
+            ></div>
+            <div className="feature-tooltip">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke={plan?.color}
+                  stroke-width="2"
+                />
+                <path
+                  d="M12 8.5C11.4477 8.5 11 8.94772 11 9.5C11 10.0523 11.4477 10.5 12 10.5C12.5523 10.5 13 10.0523 13 9.5C13 8.94772 12.5523 8.5 12 8.5ZM11 13V17H13V13H11Z"
+                  fill={plan?.color}
+                />
+              </svg>
+              <div className="tooltip-text">{plan.text}</div>
+            </div>
+          </div>
+          <p className="text">
             {plan?.name === "Free"
               ? "Free includes:"
               : "Everything in free plus:"}
@@ -59,11 +111,24 @@ const PricingPlans: React.FC<PricingPlansProps> = ({ plans }) => {
               )
               .map((feature, i) => (
                 <li key={i} className="single-list">
-                  {feature.feature_title}
+                  <div className="feature-tooltip">
+                    {feature.feature_title}
+                    <div
+                      className="tooltip-text"
+                      dangerouslySetInnerHTML={{
+                        __html: feature?.feature_desc,
+                      }}
+                    />
+                  </div>
                 </li>
               ))}
           </ul>
-          <button>Select Plan</button>
+          <button
+            style={{ backgroundColor: plan?.color }}
+            className="plan-button"
+          >
+            Select Plan
+          </button>
         </div>
       );
     });
@@ -83,7 +148,7 @@ const PricingPlans: React.FC<PricingPlansProps> = ({ plans }) => {
               {planInfo.title}
             </button>
             {planInfo.discount && (
-              <span className="discount-text"> {planInfo.discount}</span>
+              <span className="discount-text">{planInfo.discount}</span>
             )}
           </div>
         ))}

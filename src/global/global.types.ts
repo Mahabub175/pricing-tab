@@ -18,6 +18,7 @@ export interface Plan {
   price: string;
   title: string;
   text: string;
+  color: string;
   details: PlanDetails;
 }
 
