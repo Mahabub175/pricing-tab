@@ -16,6 +16,7 @@ interface PlanDetails {
 export interface Plan {
   name: string;
   price: string;
+  popular: boolean;
   title: string;
   text: string;
   color: string;
