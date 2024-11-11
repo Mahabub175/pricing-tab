@@ -44,7 +44,6 @@
 
 #plans-container {
   display: flex;
-  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 20px;
   justify-content: center;
@@ -52,21 +51,23 @@
   margin: 0 auto;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   #plans-container {
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    max-width: 350px;
+    overflow-x: hidden;
   }
-}
 
-@media (max-width: 900px) {
-  #plans-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  #plans-container {
-    grid-template-columns: 1fr;
+  .tab-btn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    color: var(--ash);
+    font-size: small;
   }
 }
 
@@ -74,7 +75,7 @@
   border: 1px solid #ccc;
   padding: 20px;
   width: 255px;
-  height: 580px;
+  height: 600px;
   text-align: start;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -99,6 +100,14 @@
 }
 .single-list {
   margin-top: 10px;
+  font-weight: 500;
+  color: var(--ash);
+  font-size: 14px;
+}
+
+.dynamic-text {
+  margin-top: 10px;
+  margin-bottom: -5px;
   font-weight: 500;
   color: var(--ash);
   font-size: 14px;
@@ -148,7 +157,7 @@
 
 .tooltip-text {
   visibility: hidden;
-  width: 200px !important;
+  width: 200px;
   height: fit-content;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

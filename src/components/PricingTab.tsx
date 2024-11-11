@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { PlansData } from "../global/global.types";
-import RenderPlans from "./RenderPlans";
+import PricingPlans from "./PricingPlans";
 
 type BillingType = "1_year" | "2_year";
 
@@ -8,7 +8,7 @@ interface PricingPlansProps {
   plans: PlansData;
 }
 
-const PricingPlans: React.FC<PricingPlansProps> = ({ plans }) => {
+const PricingTab: React.FC<PricingPlansProps> = ({ plans }) => {
   const [billingType, setBillingType] = useState<BillingType>("1_year");
 
   return (
@@ -30,9 +30,9 @@ const PricingPlans: React.FC<PricingPlansProps> = ({ plans }) => {
           </div>
         ))}
       </div>
-      <RenderPlans billingType={billingType} plans={plans} />
+      <PricingPlans billingType={billingType} plans={plans} />
     </div>
   );
 };
 
-export default PricingPlans;
+export default PricingTab;

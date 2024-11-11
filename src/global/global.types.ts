@@ -21,6 +21,9 @@ export interface Plan {
   text: string;
   color: string;
   details: PlanDetails;
+  titles: string[];
+  detailsArray: PlanDetails[];
+  similarPlans: Plan[];
 }
 
 export interface Features {

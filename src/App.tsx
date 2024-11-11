@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import PricingPlans from "./components/PricingTab";
 import { PlansData } from "./global/global.types";
+import PricingTab from "./components/PricingTab";
 
 const App: React.FC = () => {
   const [data, setData] = useState<PlansData | undefined>();
@@ -25,7 +25,7 @@ const App: React.FC = () => {
 
   return (
     <section className="container">
-      {data && <PricingPlans plans={data} />}
+      {data && <PricingTab plans={data} />}
     </section>
   );
 };
