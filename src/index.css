@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   overflow-x: hidden;
@@ -49,26 +49,6 @@
   justify-content: center;
   align-items: start;
   margin: 0 auto;
-}
-
-@media (max-width: 1100px) {
-  #plans-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    max-width: 350px;
-    overflow-x: hidden;
-  }
-
-  .tab-btn {
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    font-weight: 600;
-    color: var(--ash);
-    font-size: small;
-  }
 }
 
 .plan {
@@ -177,4 +157,19 @@
 .feature-tooltip:hover .tooltip-text {
   visibility: visible;
   opacity: 1;
+}
+
+@media (max-width: 1100px) {
+  #plans-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    max-width: 350px;
+    overflow-x: hidden;
+  }
+
+  .tab-btn {
+    font-size: small;
+  }
 }
